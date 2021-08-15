@@ -189,6 +189,7 @@ a {
 .section-service-item {
   display: inline-block;
   width: 573px;
+  min-height: 165px;
 }
 
 .section-service-item-link {
@@ -205,13 +206,19 @@ a {
 }
 
 .section-advantages-list {
-
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0  auto;
 }
 
 .section-advantages-item {
-
+  width: 275px;
 }
 
+.section-advantages-item:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
 .section-advantages-paragraph {
 
 }
@@ -223,11 +230,19 @@ a {
 }
 
 .section-accommodation-list {
-
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0  auto;
 }
 
 .section-accommodation-item {
+  min-height: 440px;
+  width: 374px;
+}
 
+.section-accommodation-item:not(:nth-child(3n)) {
+  margin-right: 23px;
 }
 
 .section-accommodation-item-list {
@@ -238,6 +253,9 @@ a {
 
 }
 
+.section-accomodation-item-title {
+
+}
 .section-accommodation-item-link {
 
 }

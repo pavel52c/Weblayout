@@ -79,29 +79,34 @@ a {
 .header-top {
   margin-top: 30px;
   margin-bottom: 30px;
-  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.header-logo-img {
+  margin-right: 40px;
+  font-size: 0;
+}
+
+.header-logo-personal {
+  background-image: url("../img/header/arrow_for_personal.svg");
+  background-position: left top 1px;
+  background-repeat: no-repeat;
+  padding-left: 28px;
+  margin-left: auto;
 }
 
 .header-bottom {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.header-logo-img {
-  margin-right: 40px;
-}
-
-.header-logo-personal {
-  align-items: flex-end;
-  background-image: url("../img/header/arrow_for_personal.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  padding-left: 28px;
+  padding: 0 45px;
 }
 
 .nav {
-  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .nav-item-link {
@@ -109,24 +114,29 @@ a {
 }
 
 .header-phone {
-  margin-right: 550px;
+  margin-right: auto;
 }
 
 .nav-list {
   display: flex;
 }
 
-.nav-item:not(:nth-child(1)) {
-  margin-left: 45px;
+.nav-item:not(:last-child) {
+  margin-right: 45px;
 }
 
 .header-buttons {
-  margin-left: 114px;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .btn {
 
+}
+
+.first-btn {
+  margin-right: 40px;
 }
 
 /* Section special */
@@ -134,14 +144,17 @@ a {
 
 }
 
+.section-special-title {
+  margin-bottom: 20px;
+}
+
 .sec-title {
-  margin-bottom: 25px;
+
 }
 
 .section-special-main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .section-special-left {
@@ -149,7 +162,7 @@ a {
 }
 
 .right {
-  margin-right: 375px;
+
 }
 
 .section-special-article {
@@ -173,6 +186,10 @@ a {
 
 }
 
+.section-info-title{
+  margin-bottom: 11px;
+}
+
 .section-info-paragraph {
 
 }
@@ -182,12 +199,18 @@ a {
 
 }
 
+.section-service-title {
+  margin-bottom: 20px;
+}
+
 .section-service-list {
   /* font-size: 0; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .section-service-item {
-  display: inline-block;
   width: 573px;
   min-height: 165px;
 }
@@ -205,10 +228,13 @@ a {
 
 }
 
+.section-advantages-title {
+  margin-bottom: 30px;
+}
+
 .section-advantages-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   margin: 0  auto;
 }
 
@@ -229,10 +255,12 @@ a {
 
 }
 
+.section-accommodation-title {
+  margin-bottom: 30px;
+}
 .section-accommodation-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   margin: 0  auto;
 }
 

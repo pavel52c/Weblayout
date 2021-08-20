@@ -102,7 +102,8 @@ section:not(:last-child) {
 .header-bottom {
   display: flex;
   align-items: center;
-  padding: 0 45px;
+  /* height: 70px; */
+  padding: 10px 45px;
   background-color: white;
   border-radius: 15px;
   font-weight: 400;
@@ -113,7 +114,6 @@ section:not(:last-child) {
 .nav {
   display: flex;
   align-items: center;
-
 }
 
 .nav-item-link {
@@ -121,7 +121,6 @@ section:not(:last-child) {
 }
 
 .header-phone {
-  margin-right: auto;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -130,11 +129,12 @@ section:not(:last-child) {
 
 .nav-list {
   display: flex;
+
 }
 
 .nav-item {
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   line-height: 16px;
 }
 
@@ -197,11 +197,11 @@ section:not(:last-child) {
 .section-special-article {
   min-height: 258px;
   min-width: 573px;
-  padding-left: 40px;
+  padding: 40px;
 }
 
 .section-special-article:nth-child(1) {
-  background-image: url("../img/special/1.png"), linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+  background-image: url("../img/special/1.png");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -209,7 +209,7 @@ section:not(:last-child) {
 }
 
 .section-special-article:nth-child(2) {
-  background-image: url("../img/special/2.png"), linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+  background-image: url("../img/special/2.png");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -218,7 +218,7 @@ section:not(:last-child) {
 .section-special-article-right {
   min-width: 573px;
   min-height: 540px;
-  padding-left: 40px;
+  padding: 40px;
   background-image: url("../img/special/3.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -230,11 +230,11 @@ section:not(:last-child) {
   line-height: 40px;
   color: #FFFFFF;
   max-width: 299px;
-  margin-bottom: 15px;
+  margin: 0;
 }
 
 .thrid {
-  margin-top: 211px;
+  padding-top: 171px;
   font-size: 60px;
   line-height: 60px;
 }
@@ -258,7 +258,6 @@ section:not(:last-child) {
   font-size: 16px;
   line-height: 16px;
   color: #FFCC66;
-  padding-bottom: 41px;
 }
 
 /* Section-info */
@@ -274,7 +273,7 @@ section:not(:last-child) {
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
-  width: 888px;
+  max-width: 888px;
 }
 
 /* Section-service */

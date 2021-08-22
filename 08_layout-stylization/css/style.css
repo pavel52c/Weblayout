@@ -102,7 +102,7 @@ section:not(:last-child) {
 .header-bottom {
   display: flex;
   align-items: center;
-  /* height: 70px; */
+  max-height: 70px;
   padding: 10px 45px;
   background-color: white;
   border-radius: 15px;
@@ -136,6 +136,7 @@ section:not(:last-child) {
   padding-top: 20px;
   padding-bottom: 20px;
   line-height: 16px;
+  max-height: 50px;
 }
 
 .nav-item:last-child {
@@ -187,6 +188,7 @@ section:not(:last-child) {
 .section-special-main {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .section-special-left {
@@ -202,7 +204,7 @@ section:not(:last-child) {
 
 .section-special-article:nth-child(1) {
   background-image: url("../img/special/1.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;
   margin-bottom: 23px;
@@ -210,7 +212,7 @@ section:not(:last-child) {
 
 .section-special-article:nth-child(2) {
   background-image: url("../img/special/2.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;
 }
@@ -220,7 +222,7 @@ section:not(:last-child) {
   min-height: 540px;
   padding: 40px;
   background-image: url("../img/special/3.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -258,6 +260,10 @@ section:not(:last-child) {
   font-size: 16px;
   line-height: 16px;
   color: #FFCC66;
+  padding-right: 17px;
+  background-image: url("../img/special/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 /* Section-info */
@@ -270,7 +276,6 @@ section:not(:last-child) {
 }
 
 .section-info-paragraph {
-  font-weight: normal;
   font-size: 16px;
   line-height: 32px;
   max-width: 888px;
@@ -329,11 +334,19 @@ section:not(:last-child) {
   font-size: 20px;
   line-height: 40px;
   color: #CC9933;
+  padding-right: 17px;
+  background-image: url("../img/service/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .section-service-item-paragraph {
   width: 402px;
   font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+  padding-bottom: 50px;
+  margin: 0;
 }
 
 /* Section advantages */
@@ -356,6 +369,7 @@ section:not(:last-child) {
   min-height: 275px;
   background-color: white;
   border-radius: 15px;
+  padding: 116px 45px 31px;
 }
 
 .section-advantages-item:not(:nth-child(4n)) {
@@ -415,12 +429,11 @@ section:not(:last-child) {
 }
 
 .section-advantages-paragraph {
-  width: 188px;
-  padding-top: 116px;
-  padding-left: 45px;
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
-  padding-bottom: 41px;
+  line-height: 200%;
+  color: #000000;
 }
 
 
@@ -445,6 +458,11 @@ section:not(:last-child) {
   background-color: white;
   border-radius: 15px;
   margin-bottom: 23px;
+
+}
+
+.section-accommodation-item:not(:last-child) {
+  padding-bottom: 41px;
 }
 
 .section-accommodation-item:not(:nth-child(3n)) {
@@ -453,6 +471,7 @@ section:not(:last-child) {
 
 .section-accommodation-item:last-child {
   background-image: url("../img/accomodations/9.png");
+  background-size: cover;
 }
 
 .section-accommodation-item-list {
@@ -474,6 +493,10 @@ section:not(:last-child) {
   padding-left: 54px;
   margin-top: 373px;
   padding-bottom: 27px;
+  padding-right: 17px;
+  background-image: url("../img/accomodations/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right top 10px;
 }
 
 .section-accomodation-item-text {
@@ -487,4 +510,9 @@ section:not(:last-child) {
 
 .place {
   color: #999999;
+}
+
+.price {
+  font-size: 20px;
+  line-height: 20px;
 }

@@ -298,10 +298,10 @@ section:not(:last-child) {
 }
 
 .section-service-item {
+  display: inline-block;
   width: 572px;
   min-height: 330px;
-  padding-top: 191px;
-  padding-left: 45px;
+  padding: 165px 45px 35px;
   background-color: white;
   border-radius: 15px;
 }
@@ -330,6 +330,8 @@ section:not(:last-child) {
 }
 
 .section-service-item-link {
+  display: inline-block;
+  margin-top: 26px;
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
@@ -341,11 +343,10 @@ section:not(:last-child) {
 }
 
 .section-service-item-paragraph {
-  width: 402px;
+  max-width: 402px;
   font-size: 16px;
   line-height: 200%;
   color: #000000;
-  padding-bottom: 50px;
   margin: 0;
 }
 
@@ -472,6 +473,10 @@ section:not(:last-child) {
 .section-accommodation-item:last-child {
   background-image: url("../img/accomodations/9.png");
   background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 27px;
 }
 
 .section-accommodation-item-list {
@@ -490,9 +495,6 @@ section:not(:last-child) {
   font-size: 20px;
   line-height: 200%;
   color: #FFFFFF;
-  padding-left: 54px;
-  margin-top: 373px;
-  padding-bottom: 27px;
   padding-right: 17px;
   background-image: url("../img/accomodations/arrow.svg");
   background-repeat: no-repeat;

@@ -525,6 +525,15 @@ section:last-child {
   background-color: #E9E9E9;
 }
 
+.section-tour-list {
+  display: flex;
+}
+
+.section-tour-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-tour-title {
   margin-bottom: 10px;
 }
@@ -595,4 +604,3 @@ section:last-child {
   line-height: 150%;
   color: #CC9933;
 }
-

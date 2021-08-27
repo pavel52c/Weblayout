@@ -572,7 +572,7 @@ section:last-child {
 }
 
 .section-tour-item:nth-child(3) {
-  width: 141px;
+  width: 161px;
 }
 
 .section-tour-item:nth-child(4) {
@@ -617,6 +617,8 @@ section:last-child {
 .section-tour-label {
   font-size: 12px;
   line-height: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .section-tour-option {
@@ -671,20 +673,20 @@ section:last-child {
   color: #000000;
 }
 
-.section-contacts-str:nth-child(1) {
+.section-contacts-item:nth-child(1) > .section-contacts-str {
   margin-right: 83px;
 }
 
-.section-contacts-str:nth-child(2) {
+.section-contacts-item:nth-child(2) > .section-contacts-str {
   margin-right: 47px;
 }
 
-.section-contacts-str:nth-child(3) {
+.section-contacts-item:nth-child(3) > .section-contacts-str {
   margin-right: 84px;
 }
 
-.section-contacts-str:nth-child(4) {
-  margin-right: 84px;
+.section-contacts-item:nth-child(4) > .section-contacts-str {
+  margin-right: 74px;
 }
 
 .section-contacts-adress {
@@ -727,7 +729,6 @@ section:last-child {
 /* Footer */
 
 .footer {
-  max-width: 1168px;
   background-color: #333;
   border-radius: 15px;
   margin: 0 auto;
@@ -736,10 +737,11 @@ section:last-child {
   background-image: url("../img/footer/logo-sun.svg");
   background-repeat: no-repeat;
   background-position: right 175.62px bottom;
+  padding: 44px 51px 46px 52px;
 }
 
 .footer-left {
-  padding: 44px 0 46px 52px;
+  /* padding: 44px 0 46px 52px; */
 }
 
 .footer-paragraph {
@@ -751,9 +753,18 @@ section:last-child {
   font-style: normal;
 }
 
+.footer-address {
+  margin: 0;
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 190%;
+  color: #FFFFFF;
+  font-style: normal;
+}
+
 .footer-center {
-  padding-top: 51px;
-  margin-left: 102px;
+  margin-left: 150px;;
+  width: 416px;
 }
 
 .footer-link {
@@ -774,13 +785,14 @@ section:last-child {
 .footer-right {
   display: flex;
   flex-direction: column;
-  padding-top: 51px;
-  padding-right: 51px;
   margin-left: 260px;
 }
 
 .footer-link-img {
   font-size: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
 }
 
 .footer-item-link:nth-child(1) {

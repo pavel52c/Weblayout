@@ -56,6 +56,7 @@ ul {
 a {
   color: black;
   text-decoration: none;
+  transition-timing-function: ease;
 }
 
 a:hover {
@@ -63,14 +64,13 @@ a:hover {
 }
 
 a:focus {
-  outline: none;
-  border: 1px solid var(--font-color-gold);
+  outline: 1px solid var(--font-color-gold);
   color:var(--font-color-gold)
 }
 
 a:active {
   color: #A47312;
-  border: none;
+  outline: none;
 }
 
 :root {
@@ -116,8 +116,8 @@ section:last-child {
 }
 
 .header-logo-img:focus {
-  outline: none;
-  border: 2px solid var(--font-color-gold);
+  outline: 3px solid var(--font-color-gold);
+  outline-offset: 3px;
 }
 
 .header-logo-personal {
@@ -135,14 +135,13 @@ section:last-child {
 }
 
 .header-logo-personal:focus {
-  outline: none;
-  border: 1px solid var(--font-color-gold);
+  outline: 1px solid var(--font-color-gold);
   color:var(--font-color-gold)
 }
 
 .header-logo-personal:active {
   color: #A47312;
-  border: none;
+  outline: none;
 }
 
 
@@ -172,7 +171,7 @@ section:last-child {
   font-size: 20px;
   line-height: 20px;
   color: #666666;
-  transition-property: color, border;
+  transition-property: color, outline;
   transition-duration: .2s;
 }
 
@@ -181,19 +180,17 @@ section:last-child {
 }
 
 .header-phone:focus {
-  outline: none;
   color: var(--font-color-gold);
-  border: 1px solid var(--font-color-gold);
+  outline: 1px solid var(--font-color-gold);
 }
 
 .header-phone:active {
   color: #A47312;
-  border: none;
+  outline: none;
 }
 
 .nav-list {
   display: flex;
-
 }
 
 .nav-item {
@@ -227,13 +224,15 @@ section:last-child {
   border-radius: 15px;
   padding: 13px 20px;
   background-color: transparent;
-  transition-property: color, border;
-  transition-duration: .2s;
+  transition-property: color, outline;
+  transition-duration: .4s;
+  transition-timing-function: ease;
 }
 
 .btn:hover {
   background-color: var(--font-color-gold);
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .btn:focus {
@@ -265,21 +264,8 @@ section:last-child {
   font-size: 40px;
   line-height: 40px;
   margin-left: 40px;
-  transition-property: color, border;
+  transition-property: color, outline;
   transition-duration: .2s;
-}
-
-.sec-title:hover {
-  color: var(--font-color-gold);
-}
-
-.sec-title:focus {
-  color: var(--font-color-gold);
-  border: 1px solid var(--font-color-gold);
-}
-
-.sec-title:active {
-  color: #A47312;
 }
 
 .section-special-main {
@@ -301,14 +287,14 @@ section:last-child {
 }
 
 .section-special-article:nth-child(1) {
-  background-image: url("../img/special/1.png");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/special/1.png");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;
 }
 
 .section-special-article:nth-child(2) {
-  background-image: url("../img/special/2.png");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/special/2.png");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -447,11 +433,11 @@ section:last-child {
 }
 
 .section-service-item-link:focus {
-  border: none;
+  outline: none;
 }
 
 .section-service-item-link:active {
-  border: none;
+  outline: none;
   background-image: url("../img/service/arrow.svg");
 }
 
@@ -569,7 +555,7 @@ section:last-child {
   background-color: white;
   border-radius: 15px;
   margin-bottom: 23px;
-
+  position: relative;
 }
 
 .section-accommodation-item:not(:last-child) {
@@ -605,10 +591,14 @@ section:last-child {
   font-size: 20px;
   line-height: 200%;
   color: #FFFFFF;
-  padding-right: 17px;
   background-image: url("../img/accomodations/arrow.svg");
   background-repeat: no-repeat;
-  background-position: right top 10px;
+  background-position: right 65px bottom 9px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 403px;
+  padding-left: 80px;
 }
 
 .section-accommodation-item-link:hover {
@@ -617,6 +607,7 @@ section:last-child {
 
 .section-accommodation-item-link:focus {
   background-image: url("../img/service/arrow.svg");
+  outline: none;
 }
 
 .section-accommodation-item-link:active {
@@ -793,11 +784,11 @@ section:last-child {
 
 .section-contacts-link:focus {
   outline: none;
-  border: 1px solid var(--font-color-gold);
+  outline: 1px solid var(--font-color-gold);
 }
 
 .section-contacts-link:active {
-  border: none;
+  outline: none;
   color: #A47312;
 }
 
@@ -855,7 +846,7 @@ section:last-child {
   line-height: 150%;
   color: var(--font-color-gold);
   max-width: 155px;
-  transition-property: color, border;
+  transition-property: color, outline;
   transition-duration: .2s;
 }
 
@@ -866,12 +857,12 @@ section:last-child {
 .contacts-phone:focus {
   outline: none;
   color: var(--font-color-gold);
-  border: 1px solid var(--font-color-gold);
+  outline: 1px solid var(--font-color-gold);
 }
 
 .contacts-phone:active {
   color: #A47312;
-  border: none;
+  outline: none;
 }
 
 .contacts-btn {

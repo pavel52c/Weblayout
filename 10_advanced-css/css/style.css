@@ -381,7 +381,7 @@ section:last-child {
   font-size: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 23px;
 }
 
 .section-service-item {
@@ -390,29 +390,23 @@ section:last-child {
   padding: 165px 45px 35px;
   background-color: white;
   border-radius: 15px;
+  background-repeat: no-repeat;
 }
 
 .section-service-item:nth-child(1) {
-  width: 573px;
-  margin-bottom: 23px;
   background-image: url("../img/service/1.png");
-  background-repeat: no-repeat;
 }
 
 .section-service-item:nth-child(2) {
-  margin-bottom: 23px;
   background-image: url("../img/service/2.png");
-  background-repeat: no-repeat;
 }
 
 .section-service-item:nth-child(3) {
   background-image: url("../img/service/2.png");
-  background-repeat: no-repeat;
 }
 
 .section-service-item:nth-child(4) {
   background-image: url("../img/service/4.png");
-  background-repeat: no-repeat;
 }
 
 .section-service-item-link {
@@ -461,7 +455,8 @@ section:last-child {
 .section-advantages-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0  auto;
+  /* margin: 0  auto; */
+  gap: 23px;
 }
 
 .section-advantages-item {
@@ -470,59 +465,41 @@ section:last-child {
   background-color: white;
   border-radius: 15px;
   padding: 116px 45px 31px;
-  margin-bottom: 23px;
-}
-
-.section-advantages-item:not(:nth-child(4n)) {
-  margin-right: 23px;
+  background-repeat: no-repeat;
+  background-position: left 45px top 40px;
 }
 
 .section-advantages-item:nth-child(1) {
   background-image: url("../img/advantages/bathtub.svg");
-  background-repeat: no-repeat;
-  background-position: left 45px top 40px;
+
 }
 
 .section-advantages-item:nth-child(2) {
   background-image: url("../img/advantages/hanger.svg");
-  background-repeat: no-repeat;
-  background-position: left 45px top 40px;
 }
 
 .section-advantages-item:nth-child(3) {
   background-image: url("../img/advantages/heating.svg");
-  background-repeat: no-repeat;
-  background-position: left 45px top 40px;
 }
 
 .section-advantages-item:nth-child(4) {
   background-image: url("../img/advantages/hotel-key.svg");
-  background-repeat: no-repeat;
-  background-position: left 45px top 40px;
 }
 
 .section-advantages-item:nth-child(5) {
   background-image: url("../img/advantages/parking.svg");
-  background-repeat: no-repeat;
-  background-position: left 45px top 40px;
 }
 
 .section-advantages-item:nth-child(6) {
   background-image: url("../img/advantages/reception.svg");
-  background-repeat: no-repeat;
-  background-position: left 45px top 40px;
 }
 
 .section-advantages-item:nth-child(7) {
   background-image: url("../img/advantages/security-box.svg");
-  background-repeat: no-repeat;
-  background-position: left 45px top 40px;
 }
 
 .section-advantages-item:nth-child(8) {
   background-image: url("../img/advantages/swimming-pool.svg");
-  background-repeat: no-repeat;
-  background-position: left 45px top 40px;
 }
 
 .section-advantages-paragraph {
@@ -546,7 +523,7 @@ section:last-child {
 .section-accommodation-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0  auto;
+  gap: 23px;
 }
 
 .section-accommodation-item {
@@ -554,16 +531,11 @@ section:last-child {
   width: 374px;
   background-color: white;
   border-radius: 15px;
-  margin-bottom: 23px;
   position: relative;
 }
 
 .section-accommodation-item:not(:last-child) {
   padding-bottom: 41px;
-}
-
-.section-accommodation-item:not(:nth-child(3n)) {
-  margin-right: 23px;
 }
 
 .section-accommodation-item:last-child {

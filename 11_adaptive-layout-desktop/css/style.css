@@ -115,8 +115,14 @@ ul {
   font-size: 18px;
   line-height: 22px;
   color: #333333;
+}
+
+.nav__search {
   background-repeat: no-repeat;
   background-image: url("../img/header/search.svg");
+  width: 24px;
+  height: 24px;
+  background-position: center right;
 }
 
 .nav__link:hover {

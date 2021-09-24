@@ -29,6 +29,7 @@
 :root {
   --font-color-orange: #FF9900;
   --font-color-dark-orange: #E1670E;
+  --font-color-light-orange: rgba(255, 153, 0, 0.7);
 }
 
 html {
@@ -123,6 +124,8 @@ ul {
   width: 24px;
   height: 24px;
   background-position: center right;
+  background-color: transparent;
+  border: none;
 }
 
 .nav__link:hover {
@@ -185,12 +188,12 @@ ul {
 }
 
 .slider__btn:hover {
-  background-color: rgba(255, 153, 0, 0.7);
+  background-color: var(--font-color-light-orange);
   cursor: pointer;
 }
 
 .slider__btn:focus {
-  background-color: rgba(255, 153, 0, 0.7);
+  background-color: var(--font-color-light-orange);
 }
 
 .slider__btn:active {
@@ -388,12 +391,12 @@ ul {
 }
 
 .work__btn:hover {
-  background-color: rgba(255, 153, 0, 0.7);
+  background-color: var(--font-color-light-orange);
   cursor: pointer;
 }
 
 .work__btn:focus {
-  background-color: rgba(255, 153, 0, 0.7);
+  background-color: var(--font-color-light-orange);
 }
 
 .work__btn:active {
@@ -467,7 +470,7 @@ ul {
 }
 
 .questions__link:active {
-  color: #333333;
+  color: var(--font-color-orange);
   background-image: url("../img/questions/active.svg");
 }
 
@@ -603,6 +606,20 @@ ul {
   width: 269px;
   margin-right: 22px;
 }
+
+.footer__btn:hover {
+  background-color: var(--font-color-light-orange);
+  cursor: pointer;
+}
+
+.footer__btn:focus {
+  background-color: var(--font-color-light-orange);
+}
+
+.footer__btn:active {
+  background-color: var(--font-color-dark-orange);
+}
+
 
 .footer__label {
   font-size: 15px;

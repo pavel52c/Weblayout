@@ -479,15 +479,19 @@ ul {
 
 .questions__item {
   border-top: 1px solid #CACACA;
-}
-
-.questions__item:last-child {
   border-bottom: 1px solid #CACACA;
+  position: relative;
 }
 
-.qustions__link:hover span {
-  color: var(--font-color-orange);
+.questions__item:not(:first-child) {
+  margin-top: -1px;
 }
+
+.questions__item:hover {
+  border-color: var(--font-color-orange);
+  z-index: 1;
+}
+
 
 .questions__link:hover {
   color: var(--font-color-orange);
@@ -508,6 +512,10 @@ ul {
 
 .questions__slash {
   color: gray;
+}
+
+.questions__link:hover .questions__slash {
+  color: var(--font-color-orange);
 }
 
 /* Footer */

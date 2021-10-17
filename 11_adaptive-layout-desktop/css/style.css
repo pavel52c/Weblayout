@@ -102,7 +102,7 @@ ul {
 }
 
 .header__logo {
-  margin: 14px 0;
+  margin: 11.5px 0px;
 }
 
 .header__left {
@@ -227,7 +227,7 @@ ul {
   line-height: 32px;
   color: var(--font-family-color);
   max-width: 1235px;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .about__content {
@@ -240,7 +240,7 @@ ul {
 }
 
 .about__col:first-child {
-  width: 868px;
+  min-width: 868px;
   min-height: 622px;
   background-image: url("../img/about/man.jpg");
   background-repeat: no-repeat;
@@ -270,7 +270,7 @@ ul {
   border: 3px solid var(--font-color-orange);
   font-size: 16px;
   line-height: 20px;
-  padding: 20px 38px;
+  padding: 0;
   font-weight: bold;
   width: 175px;
   height: 60px;
@@ -306,7 +306,7 @@ ul {
   background-position: left 60px center;
   width: 870px;
   height: 295px;
-  padding: 65px 118px 65px 300px;
+  padding: 65px 116px 65px 300px;
 }
 
 .about__article:nth-child(1) {
@@ -398,9 +398,11 @@ ul {
 }
 
 .work__btn {
-  margin-right: 32px;
+  margin-right: 29px;
   font-size: 16px;
   line-height: 18px;
+  min-width: 175px;
+  min-height: 60px;
 }
 
 .work__btn:hover {
@@ -422,6 +424,7 @@ ul {
   color: var(--font-family-color);
   font-size: 16px;
   line-height: 18px;
+  min-width: 147px;
 }
 
 .work__button:hover {
@@ -456,7 +459,7 @@ ul {
   font-size: 48px;
   line-height: 59px;
   color: var(--font-family-color);
-  margin-bottom: 32px;
+  margin-bottom: 43px;
 }
 
 .questions__list {
@@ -541,7 +544,7 @@ ul {
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .footer__list {
@@ -697,4 +700,5 @@ ul {
   line-height: 32px;
   color: #CACACA;
   width: 363px;
+  margin-top: 87px;
 }

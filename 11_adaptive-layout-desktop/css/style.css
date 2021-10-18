@@ -22,6 +22,15 @@
    url("../fonts/Montserrat-Bold.woff2") format('woff2');
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat-ExtraBold'),
+   url("../fonts/Montserrat-ExtraBold.woff") format('woff');
+}
+
+
 :root {
   --font-color-orange: #FF9900;
   --font-color-dark-orange: #E1670E;
@@ -102,7 +111,9 @@ ul {
 }
 
 .header__logo {
-  margin: 11.5px 0px;
+  margin: 14px 729.37px 9px 0;
+  /* margin: 11px 0px;
+  margin-right: 729.37px; */
 }
 
 .header__left {
@@ -114,11 +125,14 @@ ul {
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
-  margin-left: auto;
 }
 
 .nav__item {
   margin-right: 85px;
+}
+
+.nav__item:first-child {
+  width: 54px;
 }
 
 .nav__link {
@@ -156,6 +170,10 @@ ul {
 }
 
 /* Slider */
+
+.section-slider {
+  margin-bottom: 105px;
+}
 
 .slider__title {
   font-weight: 800;
@@ -219,7 +237,7 @@ ul {
   font-size: 48px;
   line-height: 59px;
   color: var(--font-family-color);
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .about__description {
@@ -250,7 +268,7 @@ ul {
 
 .about__dark {
   background: rgba(0, 0, 0, 0.5);
-  padding: 50px;
+  padding: 49px 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -306,7 +324,7 @@ ul {
   background-position: left 60px center;
   width: 870px;
   height: 295px;
-  padding: 65px 116px 65px 300px;
+  padding: 65px 117px 65px 299px;
 }
 
 .about__article:nth-child(1) {
@@ -325,7 +343,6 @@ ul {
   color: var(--font-family-color);
   max-width: 452px;;
   margin: 0;
-  margin-bottom: 8px;
 }
 
 .about__arcticle_paragraph {
@@ -333,6 +350,7 @@ ul {
   line-height: 32px;
   color: var(--font-family-color);
   max-width: 450px;;
+  margin-top: 9px;
 }
 
 
@@ -342,7 +360,7 @@ ul {
   font-size: 48px;
   line-height: 59px;
   color: var(--font-family-color);
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .work__buttons {
@@ -355,6 +373,9 @@ ul {
   border: none;
   background-color: transparent;
   padding: 0;
+  transition-timing-function: ease;
+  transition-property: color;
+  transition-duration: .4s;
 }
 
 .work__swipe:hover {
@@ -376,8 +397,11 @@ ul {
   margin-right: 85px;
 }
 
-.work__text {
-
+.work__arcticle {
+  background-image: url("../img/work/1.jpg");
+  background-position: right -25px bottom 2px;
+  background-size: 870px 460px;
+  background-repeat: no-repeat;
 }
 
 .work__description {
@@ -386,7 +410,7 @@ ul {
   font-size: 24px;
   line-height: 32px;
   color: var(--font-family-color);
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .work__paragraph {
@@ -398,9 +422,10 @@ ul {
 }
 
 .work__btn {
-  margin-right: 29px;
+  margin-right: 27px;
+  font-weight: bold;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   min-width: 175px;
   min-height: 60px;
 }
@@ -424,7 +449,7 @@ ul {
   color: var(--font-family-color);
   font-size: 16px;
   line-height: 18px;
-  min-width: 147px;
+  width: 147px;
 }
 
 .work__button:hover {
@@ -459,7 +484,7 @@ ul {
   font-size: 48px;
   line-height: 59px;
   color: var(--font-family-color);
-  margin-bottom: 43px;
+  margin-bottom: 42px;
 }
 
 .questions__list {
@@ -474,10 +499,11 @@ ul {
   line-height: 32px;
   color: var(--font-family-color);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right -17px bottom 31px;
   background-image: url("../img/questions/default.svg");
   transition-property: color, border;
   transition-duration: .2s;
+  background-size: 50px 50px;
   margin: 0;
 }
 
@@ -544,7 +570,7 @@ ul {
 }
 
 .footer__logo {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .footer__list {
@@ -554,6 +580,7 @@ ul {
 .footer__link {
   font-size: 18px;
   line-height: 36px;
+  font-weight: 600;
   color: #CACACA;
   transition-property: color, border;
   transition-duration: .2s;
@@ -613,6 +640,7 @@ ul {
 .footer__center {
   display: inline-block;
   width: 570px;
+  margin-left: 130px;
 }
 
 .footer__title {
@@ -637,7 +665,11 @@ ul {
   border: none;
   margin-bottom: 32px;
   color: #CACACA;
-  padding: 14px 24px;
+  padding: 13px 24px;
+}
+
+.footer__input::-webkit-input-placeholder {
+  color: #CACACA;
 }
 
 .footer__input:not(:last-child) {
@@ -650,6 +682,7 @@ ul {
   height: 150px;
   width: 570px;
   resize: none;
+  padding: 21px 24px;
 }
 
 .footer__input:hover {
@@ -669,6 +702,9 @@ ul {
 .footer__btn {
   width: 269px;
   margin-right: 22px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 19px 38px;
 }
 
 .footer__btn:hover {

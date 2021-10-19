@@ -397,11 +397,12 @@ ul {
   margin-right: 85px;
 }
 
+.work__wrap {
+  display: flex;
+}
+
 .work__arcticle {
-  background-image: url("../img/work/1.jpg");
-  background-position: right -25px bottom 2px;
-  background-size: 870px 460px;
-  background-repeat: no-repeat;
+  margin-right: 142px;
 }
 
 .work__description {
@@ -476,6 +477,14 @@ ul {
 
 .work__item:not(:last-child) {
   margin-right: 85px;
+}
+
+.work__image {
+  background-image: url("../img/work/1.jpg");
+  background-position: center 10px;
+  background-repeat: no-repeat;
+  min-width: 870px;
+  background-size: contain;
 }
 
 /* Questions */
@@ -557,7 +566,7 @@ ul {
 
 .footer__container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   max-height: 594px;
 }
 
@@ -567,6 +576,10 @@ ul {
 
 .footer__nav {
   display: flex;
+}
+
+.footer__nav__item {
+  min-width: 251px;
 }
 
 .footer__logo {
@@ -640,7 +653,8 @@ ul {
 .footer__center {
   display: inline-block;
   width: 570px;
-  margin-left: 130px;
+  margin-left: 350px;
+  margin-right: 236px;
 }
 
 .footer__title {
@@ -735,6 +749,6 @@ ul {
   font-size: 16px;
   line-height: 32px;
   color: #CACACA;
-  width: 363px;
+  min-width: 363px;
   margin-top: 87px;
 }

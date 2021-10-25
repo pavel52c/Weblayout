@@ -30,10 +30,28 @@
   }
 
   .header__logo {
-    margin: 26px auto
+    margin: 26px auto;
+    background-image: url("../img/header/logo_adaptive.svg");
+    width: 100%;
   }
 
   .nav__list {
     display: none;
   }
+
+  /* Slider */
+  .banner__slide {
+    padding: 160px 77px;
+  }
+
+  .slider__title {
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .slider__description {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
 }

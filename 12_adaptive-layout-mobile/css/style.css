@@ -345,8 +345,8 @@ ul {
   border: 1px solid #CACACA;
   background-repeat: no-repeat;
   background-position: left 60px center;
-  width: 870px;
-  height: 295px;
+  max-width: 870px;
+  min-height: 295px;
   padding: 65px 117px 65px 299px;
 }
 
@@ -594,7 +594,6 @@ ul {
 .footer__container {
   display: flex;
   justify-content: space-between;
-  max-height: 594px;
 }
 
 .footer__left {
@@ -686,7 +685,7 @@ ul {
 .footer__center {
   display: inline-block;
   width: 570px;
-  margin-left: 115px;
+  margin-left: 112px;
 }
 
 .footer__title {
@@ -783,5 +782,5 @@ ul {
   color: #CACACA;
   max-width: 363px;
   margin-top: 87px;
-  margin-right: -17px;
+  /* margin-right: -17px; */
 }

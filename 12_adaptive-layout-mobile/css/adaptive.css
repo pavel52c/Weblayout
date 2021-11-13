@@ -8,13 +8,42 @@
   }
 
   .about__col:first-child {
-    max-width: 924px;
+    width: 924px;
     background-image: url("../img/about/man_1024.jpg");
-    height: 640px;
+    min-height: 640px;
+    background-size: cover;
   }
 
   .about__article {
     min-width: 924px;
+  }
+
+  .work__title {
+    margin-bottom: 49px;
+  }
+
+  .work__buttons {
+    margin-bottom: 52px;
+  }
+
+  .work__arcticle {
+    margin-right: 0;
+  }
+
+  .work__description {
+    margin-bottom: 7px;
+  }
+
+  .work__paragraph {
+    max-width: 437px;
+    margin-bottom: 24px;
+  }
+
+  .work__image {
+    width: 437px;
+    background-image: url("../img/work/1_1024.jpg");
+    height: 689px;
+    background-position: left 50px bottom -10px;
   }
 }
 
@@ -108,35 +137,6 @@
     padding: 63px 117px 63px 316px;
     background-position: left 76px center;
   }
-    /* Work */
-
-  .work__title {
-    margin-bottom: 49px;
-  }
-
-  .work__buttons {
-    margin-bottom: 52px;
-  }
-
-  .work__arcticle {
-    margin-right: 0;
-  }
-
-  .work__description {
-    margin-bottom: 7px;
-  }
-
-  .work__paragraph {
-    max-width: 437px;
-    margin-bottom: 24px;
-  }
-
-  .work__image {
-    width: 437px;
-    background-image: url("../img/work/1_1024.jpg");
-    height: 689px;
-    background-position: left 50px bottom -10px;
-  }
 
   /* Questions */
 
@@ -193,39 +193,6 @@
 
 @media (max-width: 1074px) {
   /* About */
-  .about__col:first-child {
-    background-image: url("../img/about/man_768.jpg");
-    background-size: 668px 650px;
-    min-width: 640px;
-    min-height: 641px;
-  }
-
-  .about__description {
-    margin-bottom: 60px;
-  }
-
-  .about__col__description {
-    max-width: 366px;
-  }
-
-  .about__dark {
-    padding: 34px 40px;
-  }
-
-  .about__article {
-    min-width: 668px;
-    padding: 34px 44px 33px 169px;
-    background-position: left 38px bottom 67px;
-    min-height: 235px;
-  }
-
-  .about__article:nth-child(1) {
-    background-image: url("../img/about/2_768.svg");
-  }
-
-  .about__article:nth-child(2) {
-    background-image: url("../img/about/3_768.svg");
-  }
 
 }
 
@@ -279,11 +246,36 @@
     line-height: 22px;
   }
 
-  /* .about__col:first-child {
+
+}
+
+@media (max-width: 768px) {
+  .header {
+    max-height: 69px;
+  }
+
+  .header__logo {
+    margin-top: -2px;
+    margin-bottom: 0;
+  }
+
+  .header__burger {
+    margin-top: 5px;
+  }
+
+  .nav__search {
+    margin-bottom: 4px;
+  }
+  /* Slider */
+
+
+  /* About */
+
+  .about__col:first-child {
     background-image: url("../img/about/man_768.jpg");
     background-size: 668px 650px;
-    min-width: 640px;
-    min-height: 641px;
+    width: 668px;
+    min-height: 650px;
   }
 
   .about__description {
@@ -311,29 +303,7 @@
 
   .about__article:nth-child(2) {
     background-image: url("../img/about/3_768.svg");
-  } */
-}
-
-@media (max-width: 768px) {
-  .header {
-    max-height: 69px;
   }
-
-  .header__logo {
-    margin-top: -2px;
-    margin-bottom: 0;
-  }
-
-  .header__burger {
-    margin-top: 5px;
-  }
-
-  .nav__search {
-    margin-bottom: 4px;
-  }
-  /* Slider */
-
-
 
   /* Work */
 
@@ -388,7 +358,7 @@
 
   /* Footer */
   .footer__title {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
 
   .footer__logo {
@@ -409,5 +379,175 @@
 
   .footer__input:last-child {
     padding: 24px 24px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 15px;
+    max-width: 320px;
+  }
+
+  .sections:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .header__burger {
+    margin-top: 4px;
+  }
+
+  .header__logo {
+    background-image: url("../img/header/logo_320.svg");
+    margin-bottom: 2px;
+  }
+
+  .banner__slide {
+    padding: 60px 22px;
+    text-align: center;
+  }
+
+  .banner__slide--1 {
+    background-image: url("../img/slider/1_320.jpg");
+    min-height: 308px;
+  }
+
+  .slider__title {
+    font-size: 20px;
+    line-height: 24px;
+    min-width: 247px;
+    margin-bottom: 6px;
+  }
+
+  .slider__description {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 32px;
+  }
+
+  .slider__btn {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 13px 26px;
+  }
+
+  .about__title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+
+  .about__description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+
+  .about__col:first-child {
+    background-image: url("../img/about/man_320.jpg");
+    background-size: 290px 200px;
+    width: 290px;
+    min-height: 200px;
+    display: inline-block;
+    padding-top: 209px;
+  }
+
+  .about__dark {
+    background: none;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .about__col__description {
+    font-size: 14px;
+    line-height: 28px;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 8px;
+    max-width: 290px;
+  }
+
+  .about__button {
+    max-width: 162px;
+    color: #FF9900;
+    max-height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .about__article {
+    border: none;
+    background-position: top left;
+    padding: 0;
+    padding-top: 63px;
+  }
+
+  .about__article:nth-child(1) {
+    background-image: url("../img/about/2_320.svg");
+  }
+
+  .about__article:nth-child(2) {
+    background-image: url("../img/about/3_320.svg");
+    padding-top: 60px;
+  }
+
+  .about__article:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .about__arcticle__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 290px;
+    margin-bottom: -4px;
+  }
+
+  .about__arcticle_paragraph {
+    font-size: 14px;
+    line-height: 28px;
+    max-width: 290px;
+  }
+
+  .work__title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 22px;
+  }
+
+  .work__buttons {
+    margin-bottom: 13px;
+  }
+
+  .work__item:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  .work__swipe {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .work__image {
+    background-image: url("../img/work/1_320.jpg");
+    background-size: 290px 160px;
+    margin-bottom: 16px;
+    height: 160px;
+  }
+
+  .work__description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .work__paragraph {
+    font-size: 14px;
+    line-height: 28px;
+    max-width: 290px;
+  }
+
+  .work__btn {
+    max-width: 162px;
+    max-height: 40px;
   }
 }

@@ -35,8 +35,8 @@
   --font-color-orange: #FF9900;
   --font-color-dark-orange: #E1670E;
   --font-color-light-orange: rgba(255, 153, 0, 0.7);
-  --font-family-color: #333333;
-  --font-family-white: #FFFFFF;
+  --font-family-color: #333;
+  --font-family-white: #FFF;
 }
 
 * {
@@ -101,7 +101,7 @@ ul {
 /*Header*/
 .header {
   background-color: var(--font-family-white);
-  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
 }
 
 .header__conainer {
@@ -174,6 +174,7 @@ ul {
 .nav__search:active {
 
 }
+
 .nav__link:hover {
   box-shadow: 0 2px  var(--font-color-orange);
 }
@@ -183,7 +184,6 @@ ul {
 }
 
 .nav__link:active {
-  box-shadow: none;
   color: var(--font-color-dark-orange);
   outline: none;
   box-shadow: 0 2px  var(--font-color-dark-orange);
@@ -280,13 +280,13 @@ ul {
 }
 
 .about__col:first-child {
-  min-width: 868px;
+  width: 868px;
   min-height: 622px;
   background-image: url("../img/about/man.jpg");
   background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
-  background-size: cover;
+  background-size: 868px 622px;
 }
 
 .about__dark {
@@ -347,7 +347,7 @@ ul {
   background-position: left 60px center;
   max-width: 870px;
   min-height: 295px;
-  padding: 65px 117px 65px 299px;
+  padding: 64px 117px 62px 299px;
 }
 
 .about__article:nth-child(1) {

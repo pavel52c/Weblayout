@@ -209,10 +209,11 @@ ul {
   line-height: 85px;
   color: var(--font-family-white);
   margin-bottom: 24px;
+  max-width: 837px;
 }
 
 .banner__slide {
-  padding:  100px 853px 100px 80px;
+  padding:  100px 100px 100px 80px;
   width: 100%;
   height: auto;
   background-position: center center;
@@ -239,6 +240,7 @@ ul {
   color: var(--font-family-white);
   margin-bottom: 90px;
   margin-top: 0;
+  max-width: 790px;
 }
 
 .slider__btn {

@@ -1,6 +1,7 @@
 @media (max-width: 1880px) {
   .about__content {
     flex-direction: column;
+    align-items: center;
   }
 
   .about__dark {
@@ -49,6 +50,10 @@
 
 }
 @media (max-width: 1457px) {
+  .work__wrap {
+    justify-content: flex-start;
+  }
+
   .work__paragraph {
     min-width: 437px;
   }
@@ -214,9 +219,48 @@
     max-width: 1024px;
     padding: 0 50px;
   }
+
+  .about__content {
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 1000px) {
+  .about__col:first-child {
+    background-image: url("../img/about/man_768.jpg");
+    background-size: 668px 650px;
+    width: 668px;
+    min-height: 650px;
+  }
+
+  .about__description {
+    margin-bottom: 60px;
+  }
+
+  .about__col__description {
+    max-width: 366px;
+  }
+
+  .about__dark {
+    padding: 34px 40px;
+  }
+
+  .about__article {
+    min-width: 668px;
+    padding: 34px 44px 33px 169px;
+    background-position: left 38px bottom 67px;
+    min-height: 235px;
+  }
+
+  .about__article:nth-child(1) {
+    background-image: url("../img/about/2_768.svg");
+  }
+
+  .about__article:nth-child(2) {
+    background-image: url("../img/about/3_768.svg");
+  }
+
+
   .footer {
     padding: 0;
   }
@@ -284,7 +328,7 @@
 
   /* About */
 
-  .about__col:first-child {
+  /* .about__col:first-child {
     background-image: url("../img/about/man_768.jpg");
     background-size: 668px 650px;
     width: 668px;
@@ -316,7 +360,7 @@
 
   .about__article:nth-child(2) {
     background-image: url("../img/about/3_768.svg");
-  }
+  } */
 
   /* Work */
 

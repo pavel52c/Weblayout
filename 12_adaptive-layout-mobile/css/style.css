@@ -546,12 +546,8 @@ ul {
   font-size: 24px;
   line-height: 32px;
   color: var(--font-family-color);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-image: url("../img/questions/default.svg");
   transition-property: color, border;
   transition-duration: .2s;
-  background-size: 50px 50px;
   margin: 0;
 }
 
@@ -559,6 +555,10 @@ ul {
   border-top: 1px solid #CACACA;
   border-bottom: 1px solid #CACACA;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url("../img/questions/default.svg");
+  background-size: 50px 50px;
 }
 
 .questions__item:not(:first-child) {
@@ -568,21 +568,22 @@ ul {
 .questions__item:hover {
   border-color: var(--font-color-orange);
   z-index: 1;
+  background-image: url("../img/questions/focus.svg");
 }
 
 
 .questions__link:hover {
   color: var(--font-color-orange);
   border-color: var(--font-color-orange);
-  background-image: url("../img/questions/focus.svg");
+
 }
 
-.questions__link:active {
+.questions__item:active {
   color: var(--font-color-orange);
   background-image: url("../img/questions/active.svg");
 }
 
-.questions__link:focus {
+.questions__item:focus {
   color: var(--font-color-orange);
   border-color:var(--font-color-orange);
   background-image: url("../img/questions/focus.svg");

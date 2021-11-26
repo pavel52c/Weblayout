@@ -36,7 +36,7 @@
   .slider__title {
     font-size: 60px;
     line-height: 73px;
-    min-width: 770px;
+    max-width: 770px;
     margin-bottom: 16px;
   }
 
@@ -82,9 +82,9 @@
   .work__image {
     min-width: 437px;
     background-image: url("../img/work/1_1024.jpg");
-    height: 689px;
-    background-size: contain;
-    /* background-position: left 50px bottom -10px; */
+    height: 709px;
+    background-size: 437px 689px;
+    background-position: right;
   }
 }
 
@@ -223,6 +223,10 @@
   .about__content {
     align-items: flex-start;
   }
+
+  .sections:nth-child(3) {
+    margin-bottom: 71px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -290,7 +294,6 @@
   .slider__title {
     font-size: 50px;
     line-height: 61px;
-
   }
 
   .banner__slide {
@@ -438,6 +441,10 @@
     background-position: right bottom 43px;
   } */
 
+  .sections:nth-child(3) {
+    margin-bottom: 80px;
+  }
+
   /* Footer */
   .footer__title {
     margin-bottom: 23px;
@@ -485,7 +492,7 @@
   .slider__title {
     font-size: 20px;
     line-height: 24px;
-    min-width: 247px;
+    max-width: 247px;
     margin-bottom: 7px;
   }
 
@@ -595,8 +602,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
-    background-size: 30px 30px;
     max-width: 243px;
+  }
+
+  .questions__item {
+    background-size: 30px 30px;
   }
 
   .questions__item:first-child .questions__link {

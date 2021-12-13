@@ -1,1 +1,3 @@
-$(".questions__list").accordion();
+$(".accordion").accordion({
+  heightStyle: "content",
+});

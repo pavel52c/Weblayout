@@ -1,0 +1,1 @@
+Простой одностраничный сайт. Ссылка на макет: https://www.figma.com/file/tjkkfkHDXlGscyVbS3emln/Lagoona

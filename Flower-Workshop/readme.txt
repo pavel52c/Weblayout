@@ -1,0 +1,1 @@
+Верстка макета из фигмы. Ссылка на макет: https://www.figma.com/file/ibPIPljhpz4yi2vzHisVSo/Цветочная-мастерская?node-id=1%3A2

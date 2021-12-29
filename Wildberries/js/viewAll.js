@@ -23,9 +23,7 @@ const viewAll = () => {
                         </button>
                     </div>
             `
-
             goodsContainer.append(goodBlock);
-
         })
     }
 

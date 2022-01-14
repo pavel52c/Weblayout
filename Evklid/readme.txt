@@ -1,4 +1,4 @@
-Адаптивный сайт по макету Евклид. Ссылка на макет: https://www.figma.com/file/9ZBnSDaQlGmp4CcvgxVQwR/Cld?node-id=160%3A1052.
+Адаптивный сайт по макету Евклид с использованием HTML, CSS и JavaScript. Ссылка на макет: https://www.figma.com/file/9ZBnSDaQlGmp4CcvgxVQwR/Cld?node-id=160%3A1052.
 1) Реализована адаптивность под различные разрешения экранов
 2) Применены готовые решения:
    - Слайдер

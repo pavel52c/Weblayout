@@ -1,1 +1,2 @@
-Одностраничный сайт с использованием HTML и СSS. Ссылка на макет: https://www.figma.com/file/tjkkfkHDXlGscyVbS3emln/Lagoona
+Одностраничный сайт с использованием HTML, СSS JS. Ссылка на макет: https://www.figma.com/file/tjkkfkHDXlGscyVbS3emln/Lagoona
+С помощью JS были реализованы повторяющиеся элементы по типу списков с карточками.

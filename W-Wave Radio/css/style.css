@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller-Regular'),
+    url('../fonts/MullerRegularItalic.woff2') format('woff2'),
+    url('../fonts/MullerRegularItalic.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller-Regular'),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller-Medium'),
+    url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller-Bold'),
+    url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller-Light'),
+    url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+    font-display: swap;
+    font-weight: 200;
+    font-style: normal;
+}
+
+:root {
+    --border-color: #E6E8EC;
+    --primary: #6D31EE;
+    --white: #FFF;
+    --primary-shade: #4F28A5;
+    --primary-light: #AA9DFA;
+    --text-gray: #A1A6B4;
+    --shade-grey: #D2D5DD;
+    --black: #121723;
+    --light-black: #292E39;
+    --red: #FF6F6F;
+    --promo-color: #F0D288;
+    --promo-color-shade: #BB973E;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Muller", sans-serif;
+    background-color: var(--white);
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1110px;
+    /*padding: 0 75px;*/
+}
+
+/*======== Header-top ========*/
+
+.header-top {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-top__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.header-top__logo {
+    background-image: url("../img/header-top/logo_1920.svg");
+    width: 160px;
+    height: 20px;
+    background-size: cover;
+}
+
+.header-top__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1px;
+}
+
+.header-top__btn {
+    display: none;
+}
+
+.header-top__list {
+
+    display: flex;
+    margin-right: 82px;
+}
+
+.header-top__item {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.header-top__item:not(:last-child) {
+    margin-right: 58px;
+}
+
+
+.header-top__buttons {
+
+}
+
+.header-top__btn-search {
+    background-image: url("../img/header-top/search.svg");
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+}
+
+.header-top__btn-enter {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    border: 2px solid #121723;
+    border-radius: 77px;
+    padding: 11px 31.5px;
+    margin-left: 23px;
+    background-color: transparent;
+}
+
+/*======== Header-bottom ========*/
+
+.header-bottom {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-bottom__container {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+
+.header-bottom__nav {
+
+}
+
+.header-bottom__list {
+    display: flex;
+    padding: 11px 0;
+    border-right: 1px solid var(--border-color);
+}
+
+.header-bottom__item {
+    margin-right: 53px;
+}
+
+.header-bottom__item:nth-child(4) {
+    margin-right: 51px;
+}
+
+.header-bottom__music {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--border-color);
+    padding: 13px 48px 13px 10px;
+}
+
+.music__play {
+    background-image: url("../img/header-bottom/play.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.music__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.music__description {
+    font-size: 12px;
+    line-height: 12px;
+    color: #A1A6B4;
+    margin-bottom: 5px;
+    padding-left: 3px;
+}
+
+.music__title {
+    margin-top: 1px;
+    padding-right: 4px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #121723;
+}
+
+.music__second {
+    padding-right: 42px;
+}
+
+.header-bottom__age-limit {
+    background-image: url("../img/header-bottom/age.svg");
+    width: 46px;
+    height: 60px;
+    margin-left: 52px;
+}
+
+/*======== Hero ========*/
+
+.hero {
+    background-color: var(--white);
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 37px;
+}
+
+.hero__right {
+    padding-top: 5px;
+}
+
+.hero__title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 100%;
+    color: var(--black);
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+
+.hero__title-cur {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.hero__description {
+    margin-bottom: 46px;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--black);
+    max-width: 607px;
+}
+
+.hero__description-cur {
+    color: var(--primary);
+}
+
+.hero__btn {
+    border-radius: 40px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 25px 54px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.hero__microphone {
+    display: inline-block;
+    background-image: url("../img/hero/microphone.svg");
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 372px;
+}

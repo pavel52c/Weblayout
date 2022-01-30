@@ -70,15 +70,21 @@ html {
     box-sizing: border-box;
     font-family: "Muller", sans-serif;
     background-color: var(--white);
+    color: var(--black)
 }
 
 button {
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    transition: background-color, color 0.2s ease-in-out;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
+    color: var(--black)
 }
 
 ul {
@@ -89,6 +95,10 @@ ul {
 
 p {
     margin: 0;
+}
+
+svg path {
+    transition: all .2s linear;
 }
 
 .container {
@@ -130,9 +140,9 @@ p {
 }
 
 .header-top__list {
-
     display: flex;
     margin-right: 82px;
+    margin-top: 1px;
 }
 
 .header-top__item {
@@ -144,17 +154,47 @@ p {
     margin-right: 58px;
 }
 
+.header-top__item:first-child {
+    margin-right: 60px;
+}
+
+.header__link {
+    transition: color 0.2s ease-in-out;
+}
+
+.header__link:hover {
+    color: var(--primary)
+}
+
+.header__link:focus {
+    color: var(--white);
+    background-color: var(--primary-light);
+}
+
+.header__link:active {
+    color: var(--primary-shade);
+    background-color: transparent;
+}
 
 .header-top__buttons {
 
 }
 
 .header-top__btn-search {
-    background-image: url("../img/header-top/search.svg");
     width: 24px;
     height: 24px;
-    border: none;
-    background-color: transparent;
+}
+
+.header-top__btn-search:hover svg path{
+    stroke: var(--primary-light)
+}
+
+.header-top__btn-search:focus svg path{
+    stroke: var(--primary-light)
+}
+
+.header-top__btn-search:active svg path{
+    stroke: var(--primary-shade)
 }
 
 .header-top__btn-enter {
@@ -165,10 +205,24 @@ p {
     border-radius: 77px;
     padding: 11px 31.5px;
     margin-left: 23px;
-    background-color: transparent;
 }
 
-/*======== Header-bottom ========*/
+.header-top__btn-enter:hover {
+    background-color: var(--black);
+    color: var(--white)
+}
+
+.header-top__btn-enter:focus {
+    background-color: var(--primary-light);
+    color: var(--black)
+}
+
+.header-top__btn-enter:active {
+    background-color: var(--primary-shade);
+    color: var(--white)
+}
+
+    /*======== Header-bottom ========*/
 
 .header-bottom {
     border-bottom: 1px solid var(--border-color);
@@ -202,16 +256,25 @@ p {
     display: flex;
     align-items: center;
     border-right: 1px solid var(--border-color);
-    padding: 13px 48px 13px 10px;
+    padding: 3px 48px 3px 10px;
 }
 
 .music__play {
-    background-image: url("../img/header-bottom/play.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
     display: inline-block;
     width: 24px;
     height: 24px;
+}
+
+.music__play:hover svg path {
+    fill: var(--primary);
+}
+
+.music__play:focus svg path {
+    fill: var(--primary-light);
+}
+
+.music__play:active svg path {
+    fill: var(--primary-shade)
 }
 
 .music__text {
@@ -237,7 +300,7 @@ p {
     color: #121723;
 }
 
-.music__second {
+.music-second {
     padding-right: 42px;
 }
 
@@ -259,6 +322,7 @@ p {
     align-items: center;
     justify-content: space-between;
     padding-top: 37px;
+    padding-bottom: 41px;
 }
 
 .hero__right {
@@ -269,7 +333,6 @@ p {
     font-weight: bold;
     font-size: 60px;
     line-height: 100%;
-    color: var(--black);
     margin-top: 0;
     margin-bottom: 13px;
 }
@@ -283,12 +346,27 @@ p {
     margin-bottom: 46px;
     font-size: 16px;
     line-height: 150%;
-    color: var(--black);
     max-width: 607px;
 }
 
-.hero__description-cur {
+.hero__description-link {
     color: var(--primary);
+    cursor: pointer;
+    transition: color, box-shadow 0.2s ease-in-out;
+}
+
+.hero__description-link:hover {
+    box-shadow: 0 1px 0 var(--primary);
+}
+
+.hero__description-link:focus {
+    background-color: var(--primary-light);
+    color: var(--white);
+}
+
+.hero__description-link:active {
+    box-shadow: 0 1px 0 var(--primary-shade);
+    color: var(--primary-shade)
 }
 
 .hero__btn {
@@ -300,6 +378,21 @@ p {
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.hero__btn:hover {
+    background-color: var(--primary-light);
+}
+
+.hero__btn:focus {
+    outline: 2px solid var(--primary-shade);
+    background-color: var(--primary-light);
+}
+
+.hero__btn:active {
+    background-color: var(--primary-shade);
+    outline: none;
 }
 
 .hero__microphone {
@@ -309,3 +402,183 @@ p {
     width: 350px;
     height: 372px;
 }
+
+/*======== Hero ========*/
+
+.podcast {
+    background-color: #F2F2F2;
+}
+
+.podcast__container {
+    padding: 94px 0;
+    text-align: center;
+}
+
+.podcast__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: left;
+}
+
+.podcast__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.podcast__item {
+    display: flex;
+    background-color: var(--white);
+    width: 540px;
+}
+
+.podcast-item__image {
+
+}
+
+.podcast-item__right {
+    width: 398px;
+}
+
+.podcast-item__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.podcast-item__top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 24px;
+}
+
+.podcast-item__time {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 8px;
+    width: fit-content;
+}
+
+.podcast-item__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+.podcast-item__description {
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--text-gray);
+    padding-bottom: 24px;
+}
+
+.podcast-item__play-btn {
+    width: 42px;
+    height: 42px;
+    margin-right: 36px;
+    margin-top: 6px;
+}
+
+.podcast-item__play-btn:hover svg path {
+    fill: var(--primary);
+}
+
+.podcast-item__play-btn:hover svg circle {
+    stroke: var(--primary);
+}
+
+.podcast-item__play-btn:focus svg path {
+    fill: var(--primary-light);
+}
+
+.podcast-item__play-btn:focus svg circle {
+    stroke: var(--primary-light);
+}
+
+.podcast-item__play-btn:active svg path {
+    fill: var(--primary-shade);
+}
+
+.podcast-item__play-btn:active svg circle {
+    stroke: var(--primary-shade);
+}
+
+.podcast-item__bottom {
+    padding-top: 8px;
+    padding-left: 30px;
+}
+
+.podcast-item__btn {
+    color: var(--text-gray);
+}
+
+.podcast-item__btn:hover {
+    color: var(--primary);
+}
+
+.podcast-item__btn:focus {
+    background-color: var(--primary-light);
+    color: var(--white);
+}
+
+.podcast-item__btn:active {
+    color: var(--primary-shade);
+    background-color: transparent;
+}
+
+.podcast-item__btn:hover svg path {
+    fill: var(--primary);
+}
+
+.podcast-item__btn:focus svg path {
+    fill: var(--white);
+}
+
+.podcast-item__btn:active svg path {
+    color: var(--primary-shade);
+    fill: var(--primary-shade);
+}
+
+
+.podcast-item__btn:not(:last-child) {
+    margin-right: 26px;
+}
+
+.podcast-item__btn svg {
+    margin-right: 2px;
+}
+
+.podcast__button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--primary);
+    border-radius: 40px;
+    border: 2px solid var(--primary);
+    padding: 23px 52px;
+
+}
+
+.podcast__button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.podcast__button:focus {
+    background-color: var(--primary-light);
+}
+
+.podcast__button:active {
+    background-color: var(--primary-shade);
+}
+
+
+
+
